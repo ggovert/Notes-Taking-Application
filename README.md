@@ -9,6 +9,7 @@ As a student, we usually create notes to better understand our subject. But some
 
 ## Creating the database:
 Before creating the application, it is really important to create the database of the application and define the field of each table. 
+
   1. We listed which table and all columns we will need. After that, we will do normalization which includes 1NF (First Normal Form), 2NF(Second Normal Form), 3NF(Third Normal Form), we also define the key attributes of the table which are primary key and foreign key. All of these steps are important to reduce data redundancy and improve data integrity.
     - 1NF: Eliminate duplicate columns and make sure each column hold a single value.
     - 2NF: Remove partial dependencies where a non-key attribute depends on only part of the primary key.
@@ -67,7 +68,7 @@ Before creating the application, it is really important to create the database o
 This application contains 11 pages in total:
 1. Home Page
 2. Students page
-  - Student - Class, Notes, & Assignments (Master Detail)
+  - Student - Class, Notes, & Assignments (Master-Detail)
   - Student Schedule (Faceted Search)
 3. Professors
 4. Courses
