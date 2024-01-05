@@ -11,9 +11,9 @@ As a student, we usually create notes to better understand our subject. But some
 Before creating the application, it is really important to create the database of the application and define the field of each table. 
 
   1. We listed which table and all columns we will need. After that, we will do normalization which includes 1NF (First Normal Form), 2NF(Second Normal Form), 3NF(Third Normal Form), we also define the key attributes of the table which are primary key and foreign key. All of these steps are important to reduce data redundancy and improve data integrity.
-    - 1NF: Eliminate duplicate columns and make sure each column hold a single value.
-    - 2NF: Remove partial dependencies where a non-key attribute depends on only part of the primary key.
-    - 3NF: We make sure that no non-key attribute is dependent on another non-key attribute.
+  * 1NF: Eliminate duplicate columns and make sure each column hold a single value.
+  * 2NF: Remove partial dependencies where a non-key attribute depends on only part of the primary key.
+  * 3NF: We make sure that no non-key attribute is dependent on another non-key attribute.
   2. Create an ERD (Entity Relationship Diagram) to give us a visual representation and a clear understanding of how data entities relate to each other. In this stage, we define the relationship between tables whether it is one-to-many relationship or many-to-one relationship. We have to make sure that we don't have many-to-many relationships to avoid data redundancy and ambiguity. 
 
 ![image](https://github.com/ggovert/Notes-Taking-Application/assets/111510965/cce4fabd-2b22-4b97-9594-169e170be4f1)
