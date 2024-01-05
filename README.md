@@ -16,7 +16,6 @@ Before creating the application, it is really important to create the database o
     - 3NF: We make sure that no non-key attribute is dependent on another non-key attribute.
   2. Create an ERD (Entity Relationship Diagram) to give us a visual representation and a clear understanding of how data entities relate to each other. In this stage, we define the relationship between tables whether it is one-to-many relationship or many-to-one relationship. We have to make sure that we don't have many-to-many relationships to avoid data redundancy and ambiguity. 
 
-![ERD Notes Taking Database](https://github.com/ggovert/Notes-Taking-Application/assets/111510965/933d087d-e427-4367-92f5-c8a20ec6746d)
 ![image](https://github.com/ggovert/Notes-Taking-Application/assets/111510965/cce4fabd-2b22-4b97-9594-169e170be4f1)
 
 
@@ -38,10 +37,11 @@ Before creating the application, it is really important to create the database o
      year_of_entering number NOT NULL,
      CONSTRAINT student_id_pk PRIMARY KEY (student_id) ,
      CONSTRAINT state_us_ck CHECK (state IN( 'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY' )));
-```
+    ```
 
      
      * Create Sequence
+     
      ```sql
      
      CREATE TABLE students (
