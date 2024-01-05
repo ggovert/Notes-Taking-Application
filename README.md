@@ -1,13 +1,13 @@
 # Notes Taking Application
 This application was created so it became easier for students in the same class to create notes and even upload their assignment
 
-Problem Statement and Overview: 
+## Problem Statement and Overview: 
 As a student, we usually create notes to better understand our subject. But sometimes we could miss our class and miss the notes that might be pivotal for our exams. Because of this, we usually ask our friends if they could lend us their notes so we will be not left behind. Wouldn't it be better if we had a centralized note-taking application that can make all of these processes easier, we can easily search for the course and find all of the notes that our classmates have created. From this problem, then I decided to create these note-taking application, so it became easier for students in the same class to create and share notes  and even upload their assignments. 
 
-Tools used:
+## Tools used:
 - Oracle APEX
 
-Creating the database:
+## Creating the database:
 Before creating the application, it is really important to create the database of the application and define the field of each table. 
   1. We listed which table and all columns we will need. After that, we will do normalization which includes 1NF (First Normal Form), 2NF(Second Normal Form), 3NF(Third Normal Form), we also define the key attributes of the table which are primary key and foreign key. All of these steps are important to reduce data redundancy and improve data integrity.
     - 1NF: Eliminate duplicate columns and make sure each column hold a single value.
@@ -16,7 +16,6 @@ Before creating the application, it is really important to create the database o
   2. Create an ERD (Entity Relationship Diagram) to give us a visual representation and a clear understanding of how data entities relate to each other. In this stage, we define the relationship between tables whether it is one-to-many relationship or many-to-one relationship. We have to make sure that we don't have many-to-many relationships to avoid data redundancy and ambiguity. 
 
 ![ERD Notes Taking Database](https://github.com/ggovert/Notes-Taking-Application/assets/111510965/933d087d-e427-4367-92f5-c8a20ec6746d)
-![ERD Notes Taking Database](https://github.com/ggovert/Notes-Taking-Application/assets/111510965/1433d120-cd44-4af2-999a-3bfabef10278)
 
   3. Now we create the database script that we will use to input it on Oracle APEX
       Here is the script that I used to create the database using the oracle sql+ syntax. This script includes  script to create the table
