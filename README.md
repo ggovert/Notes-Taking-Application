@@ -16,23 +16,26 @@ Before creating the application, it is really important to create the database o
   2. Create an ERD (Entity Relationship Diagram) to give us a visual representation and a clear understanding of how data entities relate to each other. In this stage, we define the relationship between tables whether it is one-to-many relationship or many-to-one relationship. We have to make sure that we don't have many-to-many relationships to avoid data redundancy and ambiguity. 
 
 ![ERD Notes Taking Database](https://github.com/ggovert/Notes-Taking-Application/assets/111510965/933d087d-e427-4367-92f5-c8a20ec6746d)
+![image](https://github.com/ggovert/Notes-Taking-Application/assets/111510965/cce4fabd-2b22-4b97-9594-169e170be4f1)
+
 
   3. Now we create the database script that we will use to input it on Oracle APEX
       Here is the script that I used to create the database using the oracle sql+ syntax. This script includes  script to create the table
      Create Table
      ```sql
+     
      CREATE TABLE students (
-  student_id varchar2(10),
-  first_name varchar2(25) NOT NULL,
-  last_name varchar2(25) NOT NULL,
-  email varchar2 (255) NOT NULL,
-  address varchar2 (255) NOT NULL,
-  city varchar2 (50) NOT NULL,
-  state char(2) NOT NULL,
-  zip number (5,0) NOT NULL,
-  year_of_entering number NOT NULL,
-CONSTRAINT student_id_pk PRIMARY KEY (student_id) ,
-CONSTRAINT state_us_ck CHECK (state IN( 'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY' ))
+     student_id varchar2(10),
+     first_name varchar2(25) NOT NULL,
+     last_name varchar2(25) NOT NULL,
+     email varchar2 (255) NOT NULL,
+     address varchar2 (255) NOT NULL,
+     city varchar2 (50) NOT NULL,
+     state char(2) NOT NULL,
+     zip number (5,0) NOT NULL,
+     year_of_entering number NOT NULL,
+     CONSTRAINT student_id_pk PRIMARY KEY (student_id) ,
+     CONSTRAINT state_us_ck CHECK (state IN( 'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY' ))
 );
 ```
      
