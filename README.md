@@ -20,7 +20,7 @@ Before creating the application, it is really important to create the database o
 
 
   3. Now we create the database script that we will use to input it on Oracle APEX
-      Here is the script that I used to create the database using the oracle sql+ syntax. This script includes  script to create the table
+      Here is the script that I used to create the database using the oracle sql+ syntax. This script includes  script to create the table. 
      Create Table
      ```sql
      
@@ -35,8 +35,24 @@ Before creating the application, it is really important to create the database o
      zip number (5,0) NOT NULL,
      year_of_entering number NOT NULL,
      CONSTRAINT student_id_pk PRIMARY KEY (student_id) ,
-     CONSTRAINT state_us_ck CHECK (state IN( 'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY' ))
-);
+     CONSTRAINT state_us_ck CHECK (state IN( 'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY' )));
+```
+
+  Create Sequence
+``` sql
+CREATE SEQUENCE notes_id_seq
+START WITH 1
+INCREMENT BY 1
+MAXVALUE 100000
+NOCACHE
+NOCYCLE;
+
+CREATE SEQUENCE assignment_id_seq
+START WITH 1
+INCREMENT BY 1
+MAXVALUE 100000
+NOCACHE
+NOCYCLE;
 ```
      
 
